@@ -11,7 +11,7 @@ interface NoteDao {
      // insert delete opertion are I/O operation It will make your app laggy if work on main thread
      // suspend is coroutine which enable function to run on background thread
      // either func called by background thread or they will call by suspend fun only
-     suspend fun instert(note: Note)
+     suspend fun insert(note: Note)
 
     @Delete
     suspend fun delete(note: Note)
